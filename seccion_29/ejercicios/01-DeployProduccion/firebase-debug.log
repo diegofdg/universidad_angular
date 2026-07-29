@@ -1,0 +1,90 @@
+[debug] [2024-08-24T19:58:09.603Z] ----------------------------------------------------------------------
+[debug] [2024-08-24T19:58:09.606Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Corsair\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-24T19:58:09.606Z] CLI Version:   13.15.4
+[debug] [2024-08-24T19:58:09.606Z] Platform:      win32
+[debug] [2024-08-24T19:58:09.607Z] Node Version:  v20.16.0
+[debug] [2024-08-24T19:58:09.607Z] Time:          Sat Aug 24 2024 13:58:09 GMT-0600 (hora estándar central)
+[debug] [2024-08-24T19:58:09.607Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-24T19:58:09.676Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-24T19:58:09.676Z] > authorizing via signed-in user (ubaldoacosta@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Cursos\Angular\control-clientes
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-24T19:58:16.949Z] Using project from CLI flag: control-clientes-80338
+[debug] [2024-08-24T19:58:16.951Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 [none]
+[debug] [2024-08-24T19:58:17.201Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 200
+[debug] [2024-08-24T19:58:17.201Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 {"projectId":"control-clientes-80338","projectNumber":"638767775290","displayName":"control-clientes","name":"projects/control-clientes-80338","resources":{"hostingSite":"control-clientes-80338"},"state":"ACTIVE","etag":"1_df58af74-ed32-4fc5-9880-28aab90efd30"}
+[info] i  Using project control-clientes-80338 (control-clientes) 
+[info] 
+=== Firestore Setup
+[debug] [2024-08-24T19:58:17.205Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/control-clientes-80338/services/firestore.googleapis.com [none]
+[debug] [2024-08-24T19:58:17.205Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/control-clientes-80338/services/firestore.googleapis.com x-goog-quota-user=projects/control-clientes-80338
+[debug] [2024-08-24T19:58:17.578Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/control-clientes-80338/services/firestore.googleapis.com 200
+[debug] [2024-08-24T19:58:17.578Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/control-clientes-80338/services/firestore.googleapis.com [omitted]
+[debug] [2024-08-24T19:58:17.578Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default) [none]
+[debug] [2024-08-24T19:58:17.884Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default) 200
+[debug] [2024-08-24T19:58:17.884Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default) {"name":"projects/control-clientes-80338/databases/(default)","uid":"f74ef154-2fa2-476b-9c7c-48d1e9aa9e05","createTime":"2024-08-21T02:19:55.532026Z","updateTime":"2024-08-21T02:19:55.532026Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-08-24T18:58:17.869838Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IKuWgIG1jogDMK6krcTehogD"}
+[debug] [2024-08-24T19:58:17.884Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-08-24T19:58:17.884Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-24T19:58:17.884Z] > authorizing via signed-in user (ubaldoacosta@gmail.com)
+[debug] [2024-08-24T19:58:17.884Z] [iam] checking project control-clientes-80338 for permissions ["firebase.projects.get"]
+[debug] [2024-08-24T19:58:17.885Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/control-clientes-80338:testIamPermissions [none]
+[debug] [2024-08-24T19:58:17.885Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/control-clientes-80338:testIamPermissions x-goog-quota-user=projects/control-clientes-80338
+[debug] [2024-08-24T19:58:17.885Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/control-clientes-80338:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-08-24T19:58:18.184Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/control-clientes-80338:testIamPermissions 200
+[debug] [2024-08-24T19:58:18.184Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/control-clientes-80338:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-08-24T19:58:23.109Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/releases pageSize=10&pageToken=
+[debug] [2024-08-24T19:58:23.245Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/releases 200
+[debug] [2024-08-24T19:58:23.245Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/releases {"releases":[{"name":"projects/control-clientes-80338/releases/cloud.firestore","rulesetName":"projects/control-clientes-80338/rulesets/02762d26-63e7-4982-a735-d6e19b6dffcd","createTime":"2024-08-21T02:19:59.502228Z","updateTime":"2024-08-24T19:54:55.723652Z"}]}
+[debug] [2024-08-24T19:58:23.246Z] Found ruleset: projects/control-clientes-80338/rulesets/02762d26-63e7-4982-a735-d6e19b6dffcd
+[debug] [2024-08-24T19:58:23.246Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/rulesets/02762d26-63e7-4982-a735-d6e19b6dffcd [none]
+[debug] [2024-08-24T19:58:23.327Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/rulesets/02762d26-63e7-4982-a735-d6e19b6dffcd 200
+[debug] [2024-08-24T19:58:23.328Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/control-clientes-80338/rulesets/02762d26-63e7-4982-a735-d6e19b6dffcd [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-08-24T19:58:26.191Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-08-24T19:58:26.194Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-08-24T19:58:26.491Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-08-24T19:58:26.491Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/control-clientes-80338/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-08-24T19:58:26.493Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-08-24T19:58:26.493Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/control-clientes-80338/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Hosting Setup
+[debug] [2024-08-24T19:58:26.494Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 [none]
+[debug] [2024-08-24T19:58:26.701Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 200
+[debug] [2024-08-24T19:58:26.701Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/control-clientes-80338 {"projectId":"control-clientes-80338","projectNumber":"638767775290","displayName":"control-clientes","name":"projects/control-clientes-80338","resources":{"hostingSite":"control-clientes-80338"},"state":"ACTIVE","etag":"1_df58af74-ed32-4fc5-9880-28aab90efd30"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
